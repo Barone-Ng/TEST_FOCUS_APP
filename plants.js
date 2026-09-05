@@ -53,7 +53,7 @@ const PLANT_TYPES = [
     name: 'Sakura Sprout',
     category: 'Tree',
     minutes: 35,
-    stages: ['🌰', '🌱', '🎋', '🌸', '🌸'],
+    stages: ['art/sakura_1.svg', 'art/sakura_2.svg', 'art/sakura_3.svg', 'art/sakura_4.svg', 'art/sakura_5.svg'],
     desc: 'Delicate blossoms that take a proper sit-down session to unfold.',
     unlock: { type: 'totalPlanted', value: 2 },
   },
