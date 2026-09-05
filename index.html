@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Focus Tree — grow something while you work</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="stars"></canvas>
+<div id="toast-wrap"></div>
+<div class="shell" id="app"></div>
+
+<!-- Firebase: initializes Auth + Firestore, exposes fire* functions on window.
+     type="module" scripts and defer scripts run in document order right
+     before the page finishes loading, so this always runs before the
+     scripts below that depend on it. -->
+<script type="module" src="firebase-init.js"></script>
+
+<!-- Data files (each is a standalone list you can edit safely) -->
+<script defer src="plants.js"></script>
+<script defer src="achievements.js"></script>
+<!-- Persistence layer, talks to Firebase -->
+<script defer src="storage.js"></script>
+<!-- App logic / rendering, depends on all of the above -->
+<script defer src="app.js"></script>
+</body>
+</html>
